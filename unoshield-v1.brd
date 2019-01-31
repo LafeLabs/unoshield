@@ -182,7 +182,7 @@ JANUARY 2019</text>
 <text x="51.308" y="55.753" size="1.778" layer="21">+</text>
 <text x="47.625" y="60.706" size="1.778" layer="21">I2C</text>
 <text x="43.561" y="22.225" size="1.778" layer="21" rot="R180">+</text>
-<text x="34.417" y="5.969" size="1.27" layer="21" rot="R270">GND</text>
+<text x="34.417" y="5.969" size="1.27" layer="21" rot="R270">2.5 V</text>
 <text x="40.386" y="14.605" size="1.27" layer="21">10k</text>
 <text x="32.385" y="14.478" size="1.27" layer="21">10k</text>
 <text x="4.572" y="55.372" size="1.27" layer="21" rot="R90">300</text>
@@ -205,7 +205,7 @@ JANUARY 2019</text>
 <text x="47.625" y="1.905" size="1.27" layer="21" rot="R90">Sense Coil 
 (A0)</text>
 <text x="20.701" y="55.245" size="1.27" layer="21" rot="R180">D3</text>
-<text x="16.637" y="4.699" size="1.27" layer="21" rot="R270">GND</text>
+<text x="17.272" y="4.064" size="1.27" layer="21" rot="R270">GND</text>
 <text x="16.637" y="39.624" size="1.27" layer="21" rot="R270">GND</text>
 <text x="33.655" y="30.988" size="1.27" layer="21" rot="R180">DRIVE OUT</text>
 <text x="32.766" y="60.325" size="0.8128" layer="21" rot="R180">   SWITCH
@@ -214,6 +214,9 @@ JANUARY 2019</text>
 <text x="24.257" y="5.334" size="1.27" layer="21" rot="R270">12</text>
 <text x="26.797" y="5.334" size="1.27" layer="21" rot="R270">11</text>
 <text x="29.337" y="5.334" size="1.27" layer="21" rot="R270">10</text>
+<text x="14.097" y="4.064" size="1.27" layer="21" rot="R270">GND</text>
+<text x="8.763" y="0.381" size="1.27" layer="21" rot="R90">D8</text>
+<text x="8.636" y="4.572" size="1.27" layer="21">EXT I/O</text>
 </plain>
 <libraries>
 <library name="resistor">
@@ -1592,6 +1595,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="1X02">
+<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Capacitors">
@@ -1890,6 +1923,7 @@ design rules under a new name.</description>
 <element name="JP10" library="SparkFun-Connectors" package="1X01" value="M01PTH" x="31.75" y="62.23"/>
 <element name="JP11" library="SparkFun-Connectors" package="1X01" value="M01PTH" x="26.67" y="62.23"/>
 <element name="JP12" library="SparkFun-Connectors" package="1X01" value="M01PTH" x="29.21" y="62.23"/>
+<element name="J2" library="SparkFun-Connectors" package="1X02" value="" x="10.16" y="1.905"/>
 </elements>
 <signals>
 <signal name="N$2">
@@ -1947,6 +1981,7 @@ design rules under a new name.</description>
 <wire x1="13.1318" y1="15.875" x2="13.1318" y2="17.145" width="0.6096" layer="1"/>
 <wire x1="13.1318" y1="17.145" x2="13.1318" y2="18.415" width="0.6096" layer="1"/>
 <contactref element="JP12" pad="1"/>
+<contactref element="J2" pad="2"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="D5"/>
@@ -2116,6 +2151,14 @@ design rules under a new name.</description>
 <contactref element="JP11" pad="1"/>
 <wire x1="26.67" y1="62.23" x2="19.05" y2="62.23" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="62.23" x2="19.05" y2="59.69" width="0.6096" layer="1"/>
+</signal>
+<signal name="N$13">
+<contactref element="U$1" pad="D8"/>
+<contactref element="J2" pad="1"/>
+<wire x1="2.032" y1="25.146" x2="5.08" y2="25.146" width="0.6096" layer="1"/>
+<wire x1="5.08" y1="25.146" x2="5.08" y2="3.81" width="0.6096" layer="1"/>
+<wire x1="5.08" y1="3.81" x2="10.16" y2="3.81" width="0.6096" layer="1"/>
+<wire x1="10.16" y1="3.81" x2="10.16" y2="1.905" width="0.6096" layer="1"/>
 </signal>
 </signals>
 </board>

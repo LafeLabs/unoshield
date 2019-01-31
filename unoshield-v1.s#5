@@ -7584,6 +7584,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_05" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7621,6 +7624,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="JP7" gate="G$1" x="30.48" y="76.2" rot="R90"/>
 <instance part="J1" gate="G$1" x="121.92" y="78.74" rot="R180"/>
 <instance part="GND3" gate="1" x="111.76" y="71.12"/>
+<instance part="JP8" gate="G$1" x="119.38" y="144.78" rot="R270"/>
+<instance part="JP9" gate="G$1" x="129.54" y="144.78" rot="R270"/>
+<instance part="GND4" gate="1" x="119.38" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -7701,6 +7707,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="J1" gate="G$1" pin="5"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="111.76" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="119.38" y1="132.08" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7857,6 +7868,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="U$1" gate="G$1" pin="D13"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="106.68" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="*D3"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="101.6" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
