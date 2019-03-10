@@ -7790,10 +7790,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="BUTTON" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D2"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="104.14" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="101.6" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="*D3"/>
+<wire x1="137.16" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -7872,10 +7872,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="*D3"/>
 <pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="101.6" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="104.14" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="106.68" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

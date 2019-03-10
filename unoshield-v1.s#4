@@ -7587,6 +7587,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="JP11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -7627,6 +7630,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="JP8" gate="G$1" x="119.38" y="144.78" rot="R270"/>
 <instance part="JP9" gate="G$1" x="129.54" y="144.78" rot="R270"/>
 <instance part="GND4" gate="1" x="119.38" y="129.54"/>
+<instance part="JP10" gate="G$1" x="144.78" y="152.4" rot="R180"/>
+<instance part="JP11" gate="G$1" x="121.92" y="119.38"/>
+<instance part="JP12" gate="G$1" x="116.84" y="144.78" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7712,6 +7718,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="JP8" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="119.38" y1="132.08" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="JP12" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="137.16" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
+<junction x="119.38" y="137.16"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7791,9 +7800,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="BUTTON" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="101.6" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="101.6" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="*D3"/>
+<wire x1="137.16" y1="152.4" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="JP10" gate="G$1" pin="1"/>
+<junction x="137.16" y="152.4"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -7873,9 +7885,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$12" class="0">
 <segment>
 <pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="104.14" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="104.14" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="129.54" y1="119.38" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="JP11" gate="G$1" pin="1"/>
+<junction x="129.54" y="119.38"/>
 </segment>
 </net>
 </nets>
