@@ -12,7 +12,8 @@ Multiple Application Uno Shield = MAUS
 |---------------|--------------|--------|------|
 |  Buttons      |              |    2   |[digikey]()| 
 |   switch      |              |    1   |[digikey]() |
-|   Big Cap     | 399-6558-ND  |    1   |[digikey]()|
+|   Big Cap     | ~399-6558-ND~  |    1   |[digikey]()|
+| big cap |1189-1745-ND|1|[digikey]()|
 | spring clips | 277-6354-ND   |    3   | [digikey](https://www.digikey.com/product-detail/en/infineon-technologies/IRF7862TRPBF/IRF7862TRPBFCT-ND/1925918) |
 |  20k pot      |              |    1   |[digikey]()|
 |  4 pin header |              |    2   |[digikey]()|
